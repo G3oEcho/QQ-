@@ -1,0 +1,321 @@
+/*布局*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    /*background: red;*/
+
+}
+.content{
+    width: 100%;
+    height: 660px;
+    /*background: blue;*/
+
+}
+.content_in{
+    width: 80%;
+    height: 100%;
+    /*background: pink;*/
+    margin: 0 auto;
+
+}
+.footer{
+    width: 100%;
+    height: 80px;
+    /*background: green;*/
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.footer_in{
+    width: 80%;
+    height: 100%;
+    /*background: pink;*/
+    margin: 0 auto;
+    position: relative;
+}
+/*头部*/
+.logo{
+    position: absolute;
+    opacity: 0.5;
+    left: 100px;
+    top: 0;
+}
+.logo:hover{
+    opacity: 1;
+}
+.logo a{
+    display: inline-block;
+    width: 340px;
+    height: 92px;
+    background: url("../Img/logo@2x.png") no-repeat;
+}
+.register{
+    float: right;
+    list-style: none;
+    line-height: 100px;
+
+}
+.register>li{
+    float: right;
+    margin-right: 20px;
+    /*color: #fff;*/
+    opacity: 0.5;
+    font-size: 20px;
+}
+.register>li:hover{
+    opacity: 1;
+}
+/*content*/
+.content_left{
+    float: left;
+    width: 75%;
+    height: 100%;
+    /*background: purple;*/
+}
+.content_left .tool_bar{
+    width: 100%;
+    height: 70px;
+    /*background: #000;*/
+}
+.tool_bar span{
+    display: inline-block;
+    width: 139px;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #fff;
+    opacity: 0.5;
+}
+.tool_bar span:hover{
+    opacity: 1;
+}
+.content_left .content_list{
+    width: 100%;
+    height: 420px;
+    overflow: auto;
+}
+.content_list li{
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    /*background-color: orange;*/
+    user-select: none;
+    color: #fff;
+    opacity: 0.5;
+    border-bottom: 1px solid white;
+}
+.content_list li div{
+    float: left;
+    line-height: 50px;
+}
+.content_list .list_check{
+    width: 10%;
+    height: 100%;
+    /*background: #000;*/
+    text-align: center;
+}
+.content_list .list_check .list_checked{
+    background: url("../Img/download.jpg");
+}
+.content_list .list_check i{
+    width: 14px;
+    height: 14px;
+    border: 1px solid #fff;
+    display: inline-block;
+}
+.content_list .list_num{
+    width: 10%;
+    height: 100%;
+    /*background: green;*/
+}
+.content_list .list_name{
+    width: 50%;
+    height: 100%;
+    /*background: red;*/
+}
+.list_name .list_menu{
+    float: right;
+    display: none;
+}
+.list_name .list_menu a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: url("../Img/download.jpg") no-repeat ;
+    margin-right: 5px;
+
+}
+.content_list .list_singer{
+    width: 20%;
+    height: 100%;
+    /*background: darkgoldenrod;*/
+}
+.content_list .list_time a{
+    background: url("../Img/download.jpg" ) no-repeat;
+}
+.content_right{
+    float: right;
+    width: 25%;
+    height: 100%;
+    /*background: grey;*/
+}
+.content_right .song_info{
+    text-align: center;
+    color: rgba(255,255,255,0.5);
+    line-height: 30px;
+}
+.song_info div a{
+    text-decoration: none;
+    opacity: 0.5;
+    color: #fff;
+}
+.song_info div a:hover{
+    opacity: 1;
+}
+.song_info .song_pic{
+    background: url("../Img/吻别.jpg") no-repeat;
+    height: 200px;
+    width: 180px;
+    margin: 20px auto;
+}
+.content_right ul li{
+    list-style: none;
+    line-height: 30px;
+    text-align: center;
+    color: rgba(255,255,255,0.5);
+    font-weight: bold;
+}
+.content_right .lyc .cur{
+    color: green;
+}
+/*底部播放控制*/
+.footer_in a{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+.footer_in .music_pre{
+    background: url("../Img/pre.jpg");
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+.footer_in .music_play{
+      background: url("../Img/play.jpg");
+      width: 50px;
+      height: 50px;
+  }
+.footer_in .music_play2{
+    background: url("../Img/stop.jpg");
+    width: 50px;
+    height: 50px;
+}
+.footer_in .music_next{
+    background: url("../Img/next.jpg");
+    width: 50px;
+    height: 50px;
+}
+.footer_in .music_progress_info{
+    display: inline-block;
+    width: 640px;
+    height: 50px;
+    /*background: red;*/
+}
+.music_progress_info .music_progress_top{
+    width: 100%;
+    height: 30px;
+    /*background: black;*/
+    color: #fff;
+
+}
+
+.music_progress_top .music_progress_name{
+    float: left;
+    opacity: 0.5;
+}
+.music_progress_top .music_progress_time{
+    float: right;
+    opacity: 0.5;
+}
+.music_progress_info .music_progress_name:hover{
+    opacity: 1;
+}
+.music_progress_bar{
+    width: 100%;
+    height: 10px;
+    color: rgba(255,255,255,0.5);
+}
+.music_progress_line{
+    width: 100px;
+    height: 10px;
+    color: #fff;
+    /*margin-top: 3px;*/
+}
+.music_progress_line .music_progress_dot{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    top: 5px;
+    left: 100px;
+}
+.footer_in .voice{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    /*background: red;*/
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+.voice .music_voice_bar{
+    height: 4px;
+    width: 70px;
+    background: rgba(255,255,255,0.5);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.music_voice_bar .music_voice_line{
+    height: 4px;
+    width: 50px;
+    background: rgba(255,255,255,1);
+}
+.music_voice_line .music_voice_dot{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    top: -5px;
+    left: 50px;
+}
+.mask_bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: url("../Img/吻别.jpg");
+    background-size: cover;
+    filter: blur(100px);
+}
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(0,0,0,0.35);
+}
